@@ -1,0 +1,10 @@
+echo "--- get_min_value_pos.c ---"
+gcc get_min_value_pos.c -o get_min_value_pos
+./get_min_value_pos
+
+echo "--- selection_sort.c ---"
+gcc selection_sort.c -o selection_sort
+./selection_sort
+
+rm get_min_value_pos
+rm selection_sort
