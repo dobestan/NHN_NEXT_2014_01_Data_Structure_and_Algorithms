@@ -1,3 +1,8 @@
+// NHN NEXT - Data Structure and Algorithms
+// @dobestan (Suchan An) / dobestan@gmail.com
+//
+// 20140414 : Selection Sort
+
 #include <stdio.h>
 
 void print_list(int *, const int);

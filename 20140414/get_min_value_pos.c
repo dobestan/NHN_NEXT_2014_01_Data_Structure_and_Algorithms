@@ -1,3 +1,8 @@
+// NHN NEXT - Data Structure and Algorithms
+// @dobestan (Suchan An) / dobestan@gmail.com
+//
+// 20140414 : Get Minimum Value Index
+
 #include <stdio.h>
 
 int get_min_value_pos(int *, int);
