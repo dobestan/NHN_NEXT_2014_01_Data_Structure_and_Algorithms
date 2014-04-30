@@ -1,0 +1,84 @@
+\hypertarget{hw07__03_8c}{\section{hw07\-\_\-03.\-c File Reference}
+\label{hw07__03_8c}\index{hw07\-\_\-03.\-c@{hw07\-\_\-03.\-c}}
+}
+
+
+binary search  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{hw07__03_8c_af3faddd27dc3f9f0af3ceeffafb413c6}{void {\bfseries print\-List} (int list\mbox{[}$\,$\mbox{]}, int size)}\label{hw07__03_8c_af3faddd27dc3f9f0af3ceeffafb413c6}
+
+\item 
+int \hyperlink{hw07__03_8c_ae2490cbc85387186b1359e46ccc3c0dc}{binary\-Search} (int list\mbox{[}$\,$\mbox{]}, int left, int right, int key)
+\begin{DoxyCompactList}\small\item\em binary search implementation \end{DoxyCompactList}\item 
+int \hyperlink{hw07__03_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+binary search 실습 주제 7.\-3 (binary search) 코드 완료해서 제출\par
+ \paragraph*{주의 사항}
+
+
+\begin{DoxyItemize}
+\item Compile error 발생하면 0점 처리함
+\item File의 맨 앞에 주석(comment) 추가
+\item Indentation
+\end{DoxyItemize}
+
+\paragraph*{입력}
+
+
+\begin{DoxyItemize}
+\item 정수 배열, 배열 내에서 검색 범위, 찾고자 하는 key 값
+\end{DoxyItemize}
+
+\paragraph*{출력}
+
+
+\begin{DoxyItemize}
+\item Key 값이 배열에 있으면 key가 있는 위치를 return
+\item Key 값이 배열에 없으면 -\/1을 return
+\end{DoxyItemize}
+
+\paragraph*{구현할 함수 A\-P\-I \-:}
+
+
+\begin{DoxyItemize}
+\item int binary\-Search (int list\mbox{[}\mbox{]}, int left, int right, int key); 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{hw07__03_8c_ae2490cbc85387186b1359e46ccc3c0dc}{\index{hw07\-\_\-03.\-c@{hw07\-\_\-03.\-c}!binary\-Search@{binary\-Search}}
+\index{binary\-Search@{binary\-Search}!hw07_03.c@{hw07\-\_\-03.\-c}}
+\subsubsection[{binary\-Search}]{\setlength{\rightskip}{0pt plus 5cm}int binary\-Search (
+\begin{DoxyParamCaption}
+\item[{int}]{list\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{left, }
+\item[{int}]{right, }
+\item[{int}]{key}
+\end{DoxyParamCaption}
+)}}\label{hw07__03_8c_ae2490cbc85387186b1359e46ccc3c0dc}
+
+
+binary search implementation 
+
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item key값이 존재하면 (int) position 리턴
+\item key값이 존재하지 않으면 -\/1 리턴 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{hw07__03_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{\index{hw07\-\_\-03.\-c@{hw07\-\_\-03.\-c}!main@{main}}
+\index{main@{main}!hw07_03.c@{hw07\-\_\-03.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{hw07__03_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+key는 찾고자 하는 값을 의미한다. 
