@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>자료구조와 알고리즘1 : 7주차 과제: Globals</title>
+<title>자료구조와 알고리즘1 : 7주차 과제: Bug List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,8 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -58,19 +58,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="globals.html"><span>All</span></a></li>
-      <li class="current"><a href="globals_func.html"><span>Functions</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,22 +72,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bug List </div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>binarySearch()
-: <a class="el" href="hw07__03_8c.html#ae2490cbc85387186b1359e46ccc3c0dc">hw07_03.c</a>
-</li>
-<li>main()
-: <a class="el" href="hw07__03_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">hw07_03.c</a>
-</li>
-<li>print_combination()
-: <a class="el" href="hw07__07_8c.html#a50f0359b8b13ed31152c59df39fb28c2">hw07_07.c</a>
-</li>
-<li>print_permutation()
-: <a class="el" href="hw07__06_8c.html#a42c3326d8b922ad75934dc6886e2e02f">hw07_06.c</a>
-</li>
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_bug000001"></a>Global <a class="el" href="hw07__07_8c.html#a50f0359b8b13ed31152c59df39fb28c2">print_combination</a>  (char *list, int startId, int length, int *is_selected)</dt>
+<dd><ul>
+<li>메모리 동적할당 후에 free되지 않음</li>
+<li>현재 print_combination 설계에서는 구현 불가</li>
 </ul>
-</div><!-- contents -->
+</dd>
+</dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Wed Apr 30 2014 16:37:53 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">

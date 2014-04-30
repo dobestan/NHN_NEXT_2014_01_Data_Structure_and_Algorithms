@@ -1,0 +1,53 @@
+\hypertarget{hw07__06_8c}{\section{hw07\-\_\-06.\-c File Reference}
+\label{hw07__06_8c}\index{hw07\-\_\-06.\-c@{hw07\-\_\-06.\-c}}
+}
+
+
+Permutations.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{hw07__06_8c_a7dbf4ad268118e5be4a773a830e000db}{void {\bfseries swap\-\_\-char} (char $\ast$ch1, char $\ast$ch2)}\label{hw07__06_8c_a7dbf4ad268118e5be4a773a830e000db}
+
+\item 
+void \hyperlink{hw07__06_8c_a42c3326d8b922ad75934dc6886e2e02f}{print\-\_\-permutation} (char $\ast$list, int start\-Id, int end\-Id)
+\item 
+\hypertarget{hw07__06_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw07__06_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Permutations. 
+
+\subsection{Function Documentation}
+\hypertarget{hw07__06_8c_a42c3326d8b922ad75934dc6886e2e02f}{\index{hw07\-\_\-06.\-c@{hw07\-\_\-06.\-c}!print\-\_\-permutation@{print\-\_\-permutation}}
+\index{print\-\_\-permutation@{print\-\_\-permutation}!hw07_06.c@{hw07\-\_\-06.\-c}}
+\subsubsection[{print\-\_\-permutation}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-permutation (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{list, }
+\item[{int}]{start\-Id, }
+\item[{int}]{end\-Id}
+\end{DoxyParamCaption}
+)}}\label{hw07__06_8c_a42c3326d8b922ad75934dc6886e2e02f}
+만약 start\-Id와 end\-Id만 같다면,\par
+지금 모든 element의 위치가 결정되었다.\par
+즉 출력하자.\par
+
+
+만약 start\-Id와 end\-Id가 같지 않다면,\par
+맨 앞자리( pos = start\-Id )를 고정하고\par
+나머지를 가지고 다시 permutations을 수행\par
+\par
+\paragraph*{\mbox{[}a, b, c\mbox{]}인 경우}
+
+\mbox{[}a, b, c\mbox{]}\par
+\mbox{[}b, a, c\mbox{]} -\/$>$ 이 상태로 \mbox{[}a, c\mbox{]}를 다시 연산수행\par
+\mbox{[}a, b, c\mbox{]}\par
+\mbox{[}c, b, a\mbox{]} -\/$>$ 이 상태로 \mbox{[}b, a\mbox{]}를 다시 연산수행\par
+\mbox{[}a, b, c\mbox{]}\par
+ 

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>자료구조와 알고리즘1 : 7주차 과제: Globals</title>
+<title>자료구조와 알고리즘1 : 7주차 과제: hw07_06.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,16 +61,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="globals.html"><span>All</span></a></li>
-      <li class="current"><a href="globals_func.html"><span>Functions</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,21 +78,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">hw07_06.c File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>binarySearch()
-: <a class="el" href="hw07__03_8c.html#ae2490cbc85387186b1359e46ccc3c0dc">hw07_03.c</a>
-</li>
-<li>main()
-: <a class="el" href="hw07__03_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">hw07_03.c</a>
-</li>
-<li>print_combination()
-: <a class="el" href="hw07__07_8c.html#a50f0359b8b13ed31152c59df39fb28c2">hw07_07.c</a>
-</li>
-<li>print_permutation()
-: <a class="el" href="hw07__06_8c.html#a42c3326d8b922ad75934dc6886e2e02f">hw07_06.c</a>
-</li>
-</ul>
+
+<p>Permutations.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7dbf4ad268118e5be4a773a830e000db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dbf4ad268118e5be4a773a830e000db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap_char</b> (char *ch1, char *ch2)</td></tr>
+<tr class="separator:a7dbf4ad268118e5be4a773a830e000db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c3326d8b922ad75934dc6886e2e02f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__06_8c.html#a42c3326d8b922ad75934dc6886e2e02f">print_permutation</a> (char *list, int startId, int endId)</td></tr>
+<tr class="separator:a42c3326d8b922ad75934dc6886e2e02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Permutations. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a42c3326d8b922ad75934dc6886e2e02f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_permutation </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>만약 startId와 endId만 같다면,<br/>
+지금 모든 element의 위치가 결정되었다.<br/>
+즉 출력하자.<br/>
+</p>
+<p>만약 startId와 endId가 같지 않다면,<br/>
+맨 앞자리( pos = startId )를 고정하고<br/>
+나머지를 가지고 다시 permutations을 수행<br/>
+<br/>
+</p>
+<h3>[a, b, c]인 경우</h3>
+<p>[a, b, c]<br/>
+[b, a, c] -&gt; 이 상태로 [a, c]를 다시 연산수행<br/>
+[a, b, c]<br/>
+[c, b, a] -&gt; 이 상태로 [b, a]를 다시 연산수행<br/>
+[a, b, c]<br/>
+ </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

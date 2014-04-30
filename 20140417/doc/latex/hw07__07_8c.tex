@@ -1,0 +1,60 @@
+\hypertarget{hw07__07_8c}{\section{hw07\-\_\-07.\-c File Reference}
+\label{hw07__07_8c}\index{hw07\-\_\-07.\-c@{hw07\-\_\-07.\-c}}
+}
+
+
+Combinations.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hw07__07_8c_a50f0359b8b13ed31152c59df39fb28c2}{print\-\_\-combination} (char $\ast$list, int start\-Id, int length, int $\ast$is\-\_\-selected)
+\begin{DoxyCompactList}\small\item\em combinations implementation \end{DoxyCompactList}\item 
+\hypertarget{hw07__07_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw07__07_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Combinations. n 개의 문자로 구성된 문자열이 주어져 있을 때 길이가 1이상이고 n 보다 작거나 같은 모든 조합을 출력하는 함수를 만들어라. 
+
+\subsection{Function Documentation}
+\hypertarget{hw07__07_8c_a50f0359b8b13ed31152c59df39fb28c2}{\index{hw07\-\_\-07.\-c@{hw07\-\_\-07.\-c}!print\-\_\-combination@{print\-\_\-combination}}
+\index{print\-\_\-combination@{print\-\_\-combination}!hw07_07.c@{hw07\-\_\-07.\-c}}
+\subsubsection[{print\-\_\-combination}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-combination (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{list, }
+\item[{int}]{start\-Id, }
+\item[{int}]{length, }
+\item[{int $\ast$}]{is\-\_\-selected}
+\end{DoxyParamCaption}
+)}}\label{hw07__07_8c_a50f0359b8b13ed31152c59df39fb28c2}
+
+
+combinations implementation 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]
+\begin{DoxyItemize}
+\item 메모리 동적할당 후에 free되지 않음
+\item 현재 print\-\_\-combination 설계에서는 구현 불가
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+\paragraph*{조금 더 나은 설계}
+
+
+\begin{DoxyItemize}
+\item print\-\_\-combination \-: C(n, r)
+\item print\-\_\-all\-\_\-combination \-: C(n, 0) + C(n, 1) + ... + C(n, r)\par
+\par
+이렇게 모듈화를 시켜서 진행하면 조금 더 예쁜 출력결과와 나은 결과를 얻을 수 있다. 하지만 오늘은 시간이 없으므로 여기까지 진행하도록 한다. 
+\end{DoxyItemize}start\-Id == 0인 경우, is\-\_\-selected 배열을 동적할당한다.
+
+start\-Id == length인 경우,\par
+이렇게 되면 모두 selected(1) or Not-\/selected(0)가 결정된 상태이다.\par
+selected(1)인 경우에만 출력하라.
