@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>자료구조와 알고리즘1 : 7주차 과제: hw07_07.c File Reference</title>
+<title>자료구조와 알고리즘1 : 7주차 과제: hw07_05.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,56 +83,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">hw07_07.c File Reference</div>  </div>
+<div class="title">hw07_05.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Combinations.  
+<p>binary search with Recursion  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
-<code>#include &lt;string.h&gt;</code><br/>
-<code>#include &lt;stdlib.h&gt;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a50f0359b8b13ed31152c59df39fb28c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__07_8c.html#a50f0359b8b13ed31152c59df39fb28c2">print_combination</a> (char *list, int startId, int length, int *is_selected)</td></tr>
-<tr class="memdesc:a50f0359b8b13ed31152c59df39fb28c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">combinations implementation  <a href="#a50f0359b8b13ed31152c59df39fb28c2">More...</a><br/></td></tr>
-<tr class="separator:a50f0359b8b13ed31152c59df39fb28c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="memitem:abbdf06b97e1296d14cef9797c74e4b2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbdf06b97e1296d14cef9797c74e4b2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print_list</b> (int list[], int size)</td></tr>
+<tr class="separator:abbdf06b97e1296d14cef9797c74e4b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1d8c8ef0cd834c7c6007bd0a45006c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__05_8c.html#afe1d8c8ef0cd834c7c6007bd0a45006c">recursive_binary_search</a> (int list[], int left, int right, int key)</td></tr>
+<tr class="separator:afe1d8c8ef0cd834c7c6007bd0a45006c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__05_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Combinations. </p>
-<p>n 개의 문자로 구성된 문자열이 주어져 있을 때 길이가 1이상이고 n 보다 작거나 같은 모든 조합을 출력하는 함수를 만들어라. </p>
+<div class="textblock"><p>binary search with Recursion </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a50f0359b8b13ed31152c59df39fb28c2"></a>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void print_combination </td>
+          <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>key는 찾고자 하는 값을 의미한다. </p>
+
+</div>
+</div>
+<a class="anchor" id="afe1d8c8ef0cd834c7c6007bd0a45006c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recursive_binary_search </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>list</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>startId</em>, </td>
+          <td class="paramname"><em>left</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
+          <td class="paramname"><em>right</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>is_selected</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -141,24 +155,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>combinations implementation </p>
-<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd><ul>
-<li>메모리 동적할당 후에 free되지 않음</li>
-<li>현재 print_combination 설계에서는 구현 불가</li>
-</ul>
-</dd></dl>
-<h3>조금 더 나은 설계</h3>
+<p>initial state</p>
 <ul>
-<li>print_combination : C(n, r)</li>
-<li>print_all_combination : C(n, 0) + C(n, 1) + ... + C(n, r)<br/>
-<br/>
-이렇게 모듈화를 시켜서 진행하면 조금 더 예쁜 출력결과와 나은 결과를 얻을 수 있다. 하지만 오늘은 시간이 없으므로 여기까지 진행하도록 한다. </li>
+<li>left = 0</li>
+<li>right = n-1</li>
 </ul>
-<p>startId == 0인 경우, is_selected 배열을 동적할당한다.</p>
-<p>startId == length인 경우,<br/>
-이렇게 되면 모두 selected(1) or Not-selected(0)가 결정된 상태이다.<br/>
-selected(1)인 경우에만 출력하라.</p>
 
 </div>
 </div>

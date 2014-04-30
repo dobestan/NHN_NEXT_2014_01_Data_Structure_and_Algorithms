@@ -1,25 +1,10 @@
 /**
  * @file hw07_03.c
  *
- * @brief binary search
+ * @brief Binary Search with Iteration
  *
- * @details
- * 실습 주제 7.3 (binary search) 코드 완료해서 제출\n
- *
- * ### 주의 사항
- * - Compile error 발생하면 0점 처리함
- * - File의 맨 앞에 주석(comment) 추가
- * - Indentation
- *
- * ### 입력
- * - 정수 배열, 배열 내에서 검색 범위, 찾고자 하는 key 값
- *
- * ### 출력
- * - Key 값이 배열에 있으면 key가 있는 위치를 return
- * - Key 값이 배열에 없으면 -1을 return
- *
- * ### 구현할 함수 API :
- * - int binarySearch (int list[], int left, int right, int key); 
+ * ### 테스트 코드
+ * 매우 간단한 예제라서 테스트 코드는 생략하였습니다.
  */
 
 #include <stdio.h>
@@ -35,7 +20,7 @@ int main() {
 
   printList(list, size);
 
-  key = 0;
+  key = 3;
   if ( ( pos = binarySearch(list, 0, size-1, key) ) != -1 )
     printf("key is at %d.\n", pos);
   else
@@ -66,11 +51,13 @@ int binarySearch(int list[], int left, int right, int key) {
    *  - right = n-1
    */
 
-  if ( left > right ) return -1;
+  while ( left <= right ) {
+    int middle = ( left + right ) / 2;
 
-  int middle = ( left + right ) / 2;
+    if ( key < list[middle] ) right = middle -1;
+    else if ( key == list[middle] ) return middle;
+    else left = middle + 1;
+  }
 
-  if ( list[middle] == key ) return middle;
-  else if ( list[middle] > key ) return binarySearch(list, left, middle-1, key);
-  else return binarySearch(list, middle+1, right, key);
+  return -1;
 }
