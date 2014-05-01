@@ -80,20 +80,90 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hw07_10.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ascending Orders with Recursive NOT_IMPLEMENTED.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa01b5259ba1c6e44a5a37257411139f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__10_8c.html#aa01b5259ba1c6e44a5a37257411139f9">print_list_ascending_order</a> (int *list, int startId, int endId)</td></tr>
+<tr class="memdesc:aa01b5259ba1c6e44a5a37257411139f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">recursive implementation of sorting  <a href="#aa01b5259ba1c6e44a5a37257411139f9">More...</a><br/></td></tr>
+<tr class="separator:aa01b5259ba1c6e44a5a37257411139f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2e573646769b61ff32286071b30688"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d2e573646769b61ff32286071b30688"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print_list</b> (int *list, int size)</td></tr>
+<tr class="separator:a4d2e573646769b61ff32286071b30688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff628899ed915e3af51f0e1c7d24575b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff628899ed915e3af51f0e1c7d24575b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_min_index</b> (int *list, int startId, int endId)</td></tr>
+<tr class="separator:aff628899ed915e3af51f0e1c7d24575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485d01fed4191fa997223b8b6d10f667"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a485d01fed4191fa997223b8b6d10f667"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap_int</b> (int *foo, int *bar)</td></tr>
+<tr class="separator:a485d01fed4191fa997223b8b6d10f667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><ul>
+<div class="textblock"><p>Ascending Orders with Recursive NOT_IMPLEMENTED. </p>
+<ul>
 <li>Fundamentals Of Data Structures</li>
 <li>1.3.2 Recursive Algorithm</li>
-<li>Exercises 4 </li>
+<li>Exercises 4</li>
 </ul>
-</div></div><!-- contents -->
+<h3>Write a C program that prints out the integer values of x, y, z in ascending order.</h3>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aa01b5259ba1c6e44a5a37257411139f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_list_ascending_order </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recursive implementation of sorting </p>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<h3>아이디어</h3>
+<ul>
+<li>만약에 정렬이 끝났으면 출력하라. ( startId+1 == endId )</li>
+<li>만약에 정렬이 끝나지 않았으면 다음의 순서로 진행하라.</li>
+<li>일단은 가장 작은 값(list[get_min_index(...)])과 현재 list[startId]을 교환한다.</li>
+<li>print_list_ascending_order(... startId+1 ...)를 다시 호출한다. </li>
+</ul>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 30 2014 17:00:45 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 1 2014 11:03:15 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

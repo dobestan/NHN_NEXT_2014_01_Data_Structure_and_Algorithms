@@ -80,20 +80,86 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hw07_12.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Tower of Hanoi.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a96fdb1370dedbfc3bb351064b004f262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__12_8c.html#a96fdb1370dedbfc3bb351064b004f262">how_to_solve_hanoi</a> (int disks, int src, int dest)</td></tr>
+<tr class="separator:a96fdb1370dedbfc3bb351064b004f262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><ul>
+<div class="textblock"><p>Tower of Hanoi. </p>
+<ul>
 <li>Fundamentals Of Data Structures</li>
 <li>1.3.2 Recursive Algorithm</li>
-<li>Exercises 11 </li>
+<li>Exercises 11</li>
 </ul>
-</div></div><!-- contents -->
+<h3>Write a recursive function that prints out the sequence of moves needed to accomplish this task.</h3>
+<h3>IDEA</h3>
+<ul>
+<li>일단은 아이디어를 몇 개 적어보자.</li>
+<li>우리가 흔히 알다시피 하노이 탑 문제는 재귀적으로 풀 수 있다.</li>
+<li>n개의 접시를 옮기는 방법은 (n-1)개의 접시를 옮기는 것을 2번 반복하면 된다.</li>
+<li>즉, P(n) = 2*P(n-1) + 1 </li>
+</ul>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a96fdb1370dedbfc3bb351064b004f262"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void how_to_solve_hanoi </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>disks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<ul>
+<li>일단은 우리가 접시를 놓을 곳은 크게 3부분이 있습니다.</li>
+<li>0또는 1또는 2입니다. src / dest가 아닌 값을 구해봅시다.</li>
+<li>알고리즘은 너무 쉬워서 간단하게 요약해서 설명한다.</li>
+<li>[ src, dest, left ] 라고 가정하자.</li>
+<li>n-1개를 src -&gt; left로 옮긴다.</li>
+<li>맨 밑에 큰 접시를 src -&gt; dest로 옮긴다.</li>
+<li>n-1개를 left -&gt; dest로 옮긴다.</li>
+</ul>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 30 2014 17:00:45 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 1 2014 11:03:15 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

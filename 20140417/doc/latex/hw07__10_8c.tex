@@ -3,10 +3,62 @@
 }
 
 
-\subsection{Detailed Description}
+Ascending Orders with Recursive N\-O\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D.  
 
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hw07__10_8c_aa01b5259ba1c6e44a5a37257411139f9}{print\-\_\-list\-\_\-ascending\-\_\-order} (int $\ast$list, int start\-Id, int end\-Id)
+\begin{DoxyCompactList}\small\item\em recursive implementation of sorting \end{DoxyCompactList}\item 
+\hypertarget{hw07__10_8c_a4d2e573646769b61ff32286071b30688}{void {\bfseries print\-\_\-list} (int $\ast$list, int size)}\label{hw07__10_8c_a4d2e573646769b61ff32286071b30688}
+
+\item 
+\hypertarget{hw07__10_8c_aff628899ed915e3af51f0e1c7d24575b}{int {\bfseries get\-\_\-min\-\_\-index} (int $\ast$list, int start\-Id, int end\-Id)}\label{hw07__10_8c_aff628899ed915e3af51f0e1c7d24575b}
+
+\item 
+\hypertarget{hw07__10_8c_a485d01fed4191fa997223b8b6d10f667}{void {\bfseries swap\-\_\-int} (int $\ast$foo, int $\ast$bar)}\label{hw07__10_8c_a485d01fed4191fa997223b8b6d10f667}
+
+\item 
+\hypertarget{hw07__10_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw07__10_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ascending Orders with Recursive N\-O\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D. 
 \begin{DoxyItemize}
 \item Fundamentals Of Data Structures
 \item 1.\-3.\-2 Recursive Algorithm
-\item Exercises 4 
+\item Exercises 4
+\end{DoxyItemize}
+
+\paragraph*{Write a C program that prints out the integer values of x, y, z in ascending order.}
+
+\subsection{Function Documentation}
+\hypertarget{hw07__10_8c_aa01b5259ba1c6e44a5a37257411139f9}{\index{hw07\-\_\-10.\-c@{hw07\-\_\-10.\-c}!print\-\_\-list\-\_\-ascending\-\_\-order@{print\-\_\-list\-\_\-ascending\-\_\-order}}
+\index{print\-\_\-list\-\_\-ascending\-\_\-order@{print\-\_\-list\-\_\-ascending\-\_\-order}!hw07_10.c@{hw07\-\_\-10.\-c}}
+\subsubsection[{print\-\_\-list\-\_\-ascending\-\_\-order}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-list\-\_\-ascending\-\_\-order (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{list, }
+\item[{int}]{start\-Id, }
+\item[{int}]{end\-Id}
+\end{DoxyParamCaption}
+)}}\label{hw07__10_8c_aa01b5259ba1c6e44a5a37257411139f9}
+
+
+recursive implementation of sorting 
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\paragraph*{아이디어}
+
+
+\begin{DoxyItemize}
+\item 만약에 정렬이 끝났으면 출력하라. ( start\-Id+1 == end\-Id )
+\item 만약에 정렬이 끝나지 않았으면 다음의 순서로 진행하라.
+\item 일단은 가장 작은 값(list\mbox{[}get\-\_\-min\-\_\-index(...)\mbox{]})과 현재 list\mbox{[}start\-Id\mbox{]}을 교환한다.
+\item print\-\_\-list\-\_\-ascending\-\_\-order(... start\-Id+1 ...)를 다시 호출한다. 
 \end{DoxyItemize}

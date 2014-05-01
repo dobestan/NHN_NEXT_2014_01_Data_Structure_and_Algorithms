@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../hw07__03_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;hw07_03.c'],['../hw07__05_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;hw07_05.c']]]
+  ['get_5fackerman_5fresult',['get_ackerman_result',['../hw07__11_8c.html#ae004f7ce1c9fbf38f3690087292a1a4e',1,'hw07_11.c']]]
 ];

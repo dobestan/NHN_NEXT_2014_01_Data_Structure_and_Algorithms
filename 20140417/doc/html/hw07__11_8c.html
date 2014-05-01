@@ -80,20 +80,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hw07_11.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ackerman's function NOT_IMPLEMENTED.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae004f7ce1c9fbf38f3690087292a1a4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw07__11_8c.html#ae004f7ce1c9fbf38f3690087292a1a4e">get_ackerman_result</a> (int m, int n)</td></tr>
+<tr class="separator:ae004f7ce1c9fbf38f3690087292a1a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495692c0cab6d276c117834c8ce5385e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a495692c0cab6d276c117834c8ce5385e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_ackerman_result_iterative_method</b> (int m, int n)</td></tr>
+<tr class="separator:a495692c0cab6d276c117834c8ce5385e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><ul>
+<div class="textblock"><p>Ackerman's function NOT_IMPLEMENTED. </p>
+<ul>
 <li>Fundamentals Of Data Structures</li>
 <li>1.3.2 Recursive Algorithm</li>
-<li>Exercises 10 </li>
+<li>Exercises 10</li>
 </ul>
-</div></div><!-- contents -->
+<h3>Ackerman's function A(m,n)</h3>
+<p>A(m, n) = n + 1 ( if, m = 0 ) = A(m-1, 1 ) ( if, n=0 ) = A(m-1, A(m, n-1)) ( otherwise ) </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ae004f7ce1c9fbf38f3690087292a1a4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_ackerman_result </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<ul>
+<li>재귀적으로 짜는 방식은 굉장히 쉽다.</li>
+<li>정의를 그대로 이용하면 된다.</li>
+</ul>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 30 2014 17:00:45 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 1 2014 11:03:15 for 자료구조와 알고리즘1 : 7주차 과제 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

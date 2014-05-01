@@ -3,10 +3,57 @@
 }
 
 
-\subsection{Detailed Description}
+Tower of Hanoi.  
 
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hw07__12_8c_a96fdb1370dedbfc3bb351064b004f262}{how\-\_\-to\-\_\-solve\-\_\-hanoi} (int disks, int src, int dest)
+\item 
+\hypertarget{hw07__12_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw07__12_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tower of Hanoi. 
 \begin{DoxyItemize}
 \item Fundamentals Of Data Structures
 \item 1.\-3.\-2 Recursive Algorithm
-\item Exercises 11 
+\item Exercises 11
+\end{DoxyItemize}
+
+\paragraph*{Write a recursive function that prints out the sequence of moves needed to accomplish this task.}
+
+\paragraph*{I\-D\-E\-A}
+
+
+\begin{DoxyItemize}
+\item 일단은 아이디어를 몇 개 적어보자.
+\item 우리가 흔히 알다시피 하노이 탑 문제는 재귀적으로 풀 수 있다.
+\item n개의 접시를 옮기는 방법은 (n-\/1)개의 접시를 옮기는 것을 2번 반복하면 된다.
+\item 즉, P(n) = 2$\ast$\-P(n-\/1) + 1 
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{hw07__12_8c_a96fdb1370dedbfc3bb351064b004f262}{\index{hw07\-\_\-12.\-c@{hw07\-\_\-12.\-c}!how\-\_\-to\-\_\-solve\-\_\-hanoi@{how\-\_\-to\-\_\-solve\-\_\-hanoi}}
+\index{how\-\_\-to\-\_\-solve\-\_\-hanoi@{how\-\_\-to\-\_\-solve\-\_\-hanoi}!hw07_12.c@{hw07\-\_\-12.\-c}}
+\subsubsection[{how\-\_\-to\-\_\-solve\-\_\-hanoi}]{\setlength{\rightskip}{0pt plus 5cm}void how\-\_\-to\-\_\-solve\-\_\-hanoi (
+\begin{DoxyParamCaption}
+\item[{int}]{disks, }
+\item[{int}]{src, }
+\item[{int}]{dest}
+\end{DoxyParamCaption}
+)}}\label{hw07__12_8c_a96fdb1370dedbfc3bb351064b004f262}
+
+\begin{DoxyItemize}
+\item 일단은 우리가 접시를 놓을 곳은 크게 3부분이 있습니다.
+\item 0또는 1또는 2입니다. src / dest가 아닌 값을 구해봅시다.
+\item 알고리즘은 너무 쉬워서 간단하게 요약해서 설명한다.
+\item \mbox{[} src, dest, left \mbox{]} 라고 가정하자.
+\item n-\/1개를 src -\/$>$ left로 옮긴다.
+\item 맨 밑에 큰 접시를 src -\/$>$ dest로 옮긴다.
+\item n-\/1개를 left -\/$>$ dest로 옮긴다.
 \end{DoxyItemize}

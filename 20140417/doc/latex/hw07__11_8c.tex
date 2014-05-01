@@ -3,10 +3,46 @@
 }
 
 
-\subsection{Detailed Description}
+Ackerman's function N\-O\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D.  
 
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{hw07__11_8c_ae004f7ce1c9fbf38f3690087292a1a4e}{get\-\_\-ackerman\-\_\-result} (int m, int n)
+\item 
+\hypertarget{hw07__11_8c_a495692c0cab6d276c117834c8ce5385e}{int {\bfseries get\-\_\-ackerman\-\_\-result\-\_\-iterative\-\_\-method} (int m, int n)}\label{hw07__11_8c_a495692c0cab6d276c117834c8ce5385e}
+
+\item 
+\hypertarget{hw07__11_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw07__11_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ackerman's function N\-O\-T\-\_\-\-I\-M\-P\-L\-E\-M\-E\-N\-T\-E\-D. 
 \begin{DoxyItemize}
 \item Fundamentals Of Data Structures
 \item 1.\-3.\-2 Recursive Algorithm
-\item Exercises 10 
+\item Exercises 10
+\end{DoxyItemize}
+
+\paragraph*{Ackerman's function A(m,n)}
+
+A(m, n) = n + 1 ( if, m = 0 ) = A(m-\/1, 1 ) ( if, n=0 ) = A(m-\/1, A(m, n-\/1)) ( otherwise ) 
+
+\subsection{Function Documentation}
+\hypertarget{hw07__11_8c_ae004f7ce1c9fbf38f3690087292a1a4e}{\index{hw07\-\_\-11.\-c@{hw07\-\_\-11.\-c}!get\-\_\-ackerman\-\_\-result@{get\-\_\-ackerman\-\_\-result}}
+\index{get\-\_\-ackerman\-\_\-result@{get\-\_\-ackerman\-\_\-result}!hw07_11.c@{hw07\-\_\-11.\-c}}
+\subsubsection[{get\-\_\-ackerman\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-ackerman\-\_\-result (
+\begin{DoxyParamCaption}
+\item[{int}]{m, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{hw07__11_8c_ae004f7ce1c9fbf38f3690087292a1a4e}
+
+\begin{DoxyItemize}
+\item 재귀적으로 짜는 방식은 굉장히 쉽다.
+\item 정의를 그대로 이용하면 된다.
 \end{DoxyItemize}

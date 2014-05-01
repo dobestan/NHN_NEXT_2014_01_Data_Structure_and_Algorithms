@@ -2,9 +2,6 @@
  * @file hw07_03.c
  *
  * @brief Binary Search with Iteration
- *
- * ### 테스트 코드
- * 매우 간단한 예제라서 테스트 코드는 생략하였습니다.
  */
 
 #include <stdio.h>
